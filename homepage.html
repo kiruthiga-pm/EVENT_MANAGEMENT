@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?w=996&t=st=1716049153~exp=1716049753~hmac=ebae0aa9135b19f4eca6907e8f80cf6deee112cd5f518685170ff3279c08d343'); /* Replace 'background.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+        }
+
+        .login-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #0056b3;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #004080;
+        }
+
+        /* Typewriter effect */
+        .typewriter h1 {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange; /* The typewriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+
+        /* Header styles */
+        header {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Marquee styles */
+        marquee {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <marquee>Welcome to this page  !!! Please first login to access the pages !!!</marquee>
+    </header>
+    <div class="container typewriter">
+        <h1>Welcome to the Event Management System</h1>
+        <br>
+        <button class="login-btn" onclick="location.href='loginpage.html'">Login</button>
+    </div>
+</body>
+</html>
